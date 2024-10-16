@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png';
+import logo from '../../public/assets/logo.png'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
@@ -11,10 +11,10 @@ const Navbar = () => {
             <img className='mx-1 w-14' src={logo} alt="logo"></img>
         </div>
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-            <FaGithub />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedin />
+            <a href='https://github.com/vishalxh'><FaGithub /></a>
+            <a href='https://www.instagram.com/'><FaInstagram /></a>
+            <a href=""><FaTwitter /></a>
+            <a href='www.linkedin.com/in/vishal-chaudhary-39b1b1229'><FaLinkedin /></a>
         </div>
     </nav>
   )

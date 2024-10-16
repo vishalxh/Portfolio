@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO_CONTENT } from "../constants"
-import profilepic from "../assets/profilepic.jpg"
+import profilepic from "../../public/assets/profilepic.jpg"
 import {motion} from 'framer-motion'
 
 const container = (delay) => ({
@@ -32,7 +32,11 @@ const Hero  = () => {
                     className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
                       Full Stack Developer
                     </motion.span>
-                    <motion.p className='my-2 max-w-xl py-6 font-light tracking-tighter'>
+                    <motion.p 
+                    variants={container(1)}
+                    initial="hidden"
+                    animate="visible"
+                    className='my-2 max-w-xl py-6 font-light tracking-tighter'>
                       {HERO_CONTENT}
                     </motion.p>
                 </div>
